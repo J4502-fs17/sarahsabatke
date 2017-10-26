@@ -15,15 +15,6 @@ h1 {
 body {
   background-color: #ebe3c3;
 }
-#container {
-  /*margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin: 0 auto 0 auto; */
-  width: 90%;
-  margin: 0 auto;
-}
 
 .caption {
   font-family: Georgia, "Times New Roman", serif;
@@ -53,4 +44,12 @@ body {
 #nav a:hover, #nav a:active {
   background-color: #33E9FF;
   text-decoration: underline;
+}
+
+
+.container {
+	display: flex;
+	flex-direction: row; 
+  flex-wrap: wrap;
+	justify-content: center;
 }
