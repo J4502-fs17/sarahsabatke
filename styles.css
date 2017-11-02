@@ -49,7 +49,180 @@ body {
 
 .container {
 	display: flex;
-	flex-direction: row; 
+	flex-direction: row;
   flex-wrap: wrap;
 	justify-content: center;
+}
+/*
+.cards {
+    margin: 0 -10px;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}*/
+
+/*.cards li {
+    background-color: #f1b82d;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.cards li {
+    background-color: #f1b82d;
+    border: 1px solid #ccc;
+    margin: 0 10px 20px 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.grid {
+  background: #fff;
+  border-radius: 0.285em;
+  box-shadow: 0 0.1em 0 0 rgba(0,0,0,0.1);
+	margin: 45px auto;
+}
+.item {
+  color: #fff;
+  text-shadow: 0 2px 0 rgba(110,133,156,0.18);
+  padding: 0.85em;
+  background: #6e859c;
+  border: solid 1px rgba(110,133,156,0.15);
+  border-radius: 0.3em;
+}
+.item:nth-child(even) {
+  background: #a5cee9;
+}*/
+/*
+@media only screen and (max-width: 500px)(min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+
+@media only print and (min-width: 480px) {
+    body {
+        background-color: purple;
+    }
+
+
+@media photo (min-width: 480px) {
+    body {
+        background-color: blue;
+    }*/
+
+    .title {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul{
+  display: flex;
+  flex-flow: column;
+}
+
+.authorbox img{
+display: none;
+
+}
+
+.pullquote{
+  display: none;
+}
+
+article{
+  margin-bottom: 0.7em;
+  border-bottom: 1px solid #ccc;
+}
+
+article:last-of-type {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 450px){
+  nav ul{
+    flex-flow: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #container{
+    width: 80%;
+  }
+}
+
+.authorbox img {
+  display: block;
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+.autherbox {
+  width: 25%;
+  max-width: 200px;
+  float: left;
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .item1 {
+    margin-right: auto;
+  }
+  nav ul li {
+    margin: 5px;
+  }
+  .pullquote{
+    display: block;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  article {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+      "a b b "
+      "c c c "
+      "e d d";
+  }
+.authorbox {
+  grid-area: a;
+  width: 100%;
+}
+.section1 {
+  grid-area: b;
+}
+.image {
+  grid-area: c;
+}
+section2 {
+  grid-area: d;
+}
+.pullquote{
+  margin-top: 0;
+  grid-area: e;
+
+}
+.section1 p:first-of-type, .section2 p: first-of-type
+{
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1200px){
+  article{
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-template-areas:
+    "a b b e"
+    "c c c ."
+    ". d d .";
+  }
+
+
+
 }
